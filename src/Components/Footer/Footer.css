@@ -1,0 +1,73 @@
+.footer {
+  background-color: #222; /* Qora fon */
+  color: white; /* Oq matn */
+  padding: 20px; /* Padding qo'shish */
+  text-align: center; /* Markazlashtirish */
+  display: flex; /* Flexbox yordamida joylash */
+  flex-direction: column; /* Vertikal joylash */
+}
+
+/* Planshetlar uchun uslublar */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Mobil qurilmalar uchun uslublar */
+@media (max-width: 480px) {
+  .footer {
+    padding: 5px;
+  }
+
+  .footer-links {
+    gap: 5px;
+  }
+}
+
+.footer-links {
+  list-style: none; /* Ro'yxat belgilari yo'q */
+  display: flex; /* Flexbox yordamida joylash */
+  justify-content: center; /* Markazlashtirish */
+  gap: 20px; /* Bo'shliq */
+  margin: 10px 0; /* Margin qo'shish */
+}
+
+.footer-links li a {
+  color: white; /* Havola rangini oq qilish */
+  text-decoration: none; /* Chizilgan matn yo'q */
+  transition: color 0.3s ease; /* Hover effekt uchun animatsiya */
+}
+
+.footer-links li a:hover {
+  text-decoration: underline; /* Hoverda chizish */
+}
+
+.footer-social {
+  display: flex; /* Flexbox yordamida joylash */
+  justify-content: center; /* Markazlashtirish */
+  gap: 15px; /* Bo'shliq */
+  margin-top: 10px; /* Margin qo'shish */
+}
+
+.footer-social a {
+  color: white; /* Ijtimoiy tarmoq havolalari rangini oq qilish */
+  text-decoration: none; /* Chizilgan matn yo'q */
+  font-size: 20px; /* Ikonkalar o'lchami */
+  transition: color 0.3s ease; /* Hover effekt uchun animatsiya */
+}
+
+.footer-social a:hover {
+  color: #61dafb; /* Hoverda rang o'zgartirish */
+}
+
+.footer-copy {
+  transform: scale(1.2); /* Hoverda kattalashtirish */
+  margin-top: 10px; /* Margin qo'shish */
+  font-size: 14px; /* Matn o'lchami */
+}

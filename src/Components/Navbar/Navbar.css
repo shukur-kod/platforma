@@ -1,0 +1,99 @@
+.navbar {
+  background-color: #333; /* Qora fon */
+  padding: 15px; /* Paddingni oshirish */
+  display: flex; /* Flexbox yordamida joylash */
+  justify-content: space-between; /* Bo'shliqlarni teng taqsimlash */
+  align-items: center; /* Vertikal markazlashtirish */
+}
+.navbar-links {
+  list-style: none; /* Ro'yxat belgilari yo'q */
+  display: flex; /* Flexbox yordamida joylash */
+  gap: 20px; /* Bo'shliq */
+  margin: 0; /* Marginni olib tashlash */
+}
+/* Planshetlar uchun uslublar */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px; /* Paddingni kamaytirish */
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Vertikal joylash */
+    gap: 10px; /* Bo'shliqni kamaytirish */
+  }
+}
+
+/* Mobil qurilmalar uchun uslublar */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px; /* Paddingni yanada kamaytirish */
+  }
+
+  .navbar-links {
+    gap: 5px; /* Bo'shliqni yanada kamaytirish */
+  }
+
+
+}
+
+.navbar-logo h1 {
+  color: white; /* Logotip rangini oq qilish */
+  margin: 0; /* Marginni olib tashlash */
+}
+
+
+.navbar-links li a {
+  color: white; /* Havola rangini oq qilish */
+  text-decoration: none; /* Chizilgan matn yo'q */
+  font-size: 18px; /* Matn o'lchami */
+  transition: background-color 0.3s ease; /* Hover effekt uchun animatsiya */
+  padding: 10px 15px; /* Padding qo'shish */
+  border-radius: 5px; /* Burchaklarni yumshatish */
+}
+
+.navbar-links li a:hover {
+  background-color: #555; /* Hoverda fon rangini o'zgartirish */
+  color: white; /* Matn rangini oq qilish */
+}
+
+.search-form {
+  display: flex; /* Qidiruv tizimini flexbox yordamida joylashtirish */
+  align-items: center; /* Vertikal markazlashtirish */
+}
+
+.search-input {
+  padding: 10px; /* Padding qo'shish */
+  border: none; /* Chegarani olib tashlash */
+  border-radius: 5px; /* Burchaklarni yumshatish */
+}
+
+.search-button {
+  padding: 10px 15px; /* Padding qo'shish */
+  border: none; /* Chegarani olib tashlash */
+  border-radius: 5px; /* Burchaklarni yumshatish */
+  background-color: #555; /* Tugma fon rangi */
+  color: white; /* Tugma matni rangini oq qilish */
+  cursor: pointer; /* Kursorni qo'shish */
+  margin-left: 5px; /* Tugma va qidiruv maydoni o'rtasida bo'shliq */
+}
+
+.search-button:hover {
+  background-color: #777; /* Hoverda fon rangini o'zgartirish */
+}
+
+.search-results {
+  background-color: #fff; /* Oq fon */
+  color: #000; /* Qora matn */
+  position: absolute; /* O'ng tarafda joylashish uchun */
+  right: 0; /* O'ng tarafga joylashish */
+  z-index: 10; /* Boshqa elementlardan ustun bo'lishi uchun */
+  padding: 10px; /* Padding qo'shish */
+  border: 1px solid #ccc; /* Chegara */
+  border-radius: 5px; /* Burchaklarni yumshatish */
+}
+
+.search-results ul {
+  list-style: none; /* Ro'yxat belgilari yo'q */
+  padding: 0; /* Paddingni olib tashlash */
+  margin: 0; /* Marginni olib tashlash */
+}

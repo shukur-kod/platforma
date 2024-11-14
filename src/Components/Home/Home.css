@@ -1,0 +1,25 @@
+/* src/Components/Home/Home.css */
+.home-section {
+    background-image: url('file:///C:/Users/ASUS%20pro/Downloads/platforma.webp'); /* Rasm manzilini to'g'rilang */
+    background-size: cover; /* Rasmni to'liq qoplash */
+    background-position: center; /* Rasmni markazga joylash */
+    height: 100vh; /* Barcha balandlikni qoplash */
+    display: flex; /* Flexbox yordamida markazlashtirish */
+    flex-direction: column; /* Vertikal joylash */
+    justify-content: center; /* Vertikal markazlashtirish */
+    align-items: center; /* Gorizontal markazlashtirish */
+    color: white; /* Matn rangini oq qilish */
+    text-align: center; /* Matnni markazga joylash */
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .home-section {
+    animation: fadeIn 1s ease-in; /* Sahna kirganda animatsiya */
+  }
